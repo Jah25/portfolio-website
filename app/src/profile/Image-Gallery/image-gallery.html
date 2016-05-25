@@ -1,0 +1,16 @@
+<div class="modal" ng-show="vm.isOpen" ng-click="vm.toggle()">
+    <div id="modal-container">
+        <div ng-click="vm.prev($event)"><img src="src/profile/images/chevron-left-white-64.png"></div>
+        <img ng-src="src/profile/images/work/{{vm.galleryId}}/{{vm.img}}.jpg">
+        <div ng-click="vm.next($event)"><img src="src/profile/images/chevron-right-white-64.png"></div>
+    </div>
+
+</div>
+
+<div class="gallery-container" ng-click="vm.toggle()">
+    <div class="small-img">
+        <img ng-src="src/profile/images/work/{{vm.galleryId}}/{{vm.img}}.jpg">
+    </div>
+
+</div>
+<!--./images/work/{{folder}}/{{img}}-->

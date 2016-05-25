@@ -1,0 +1,117 @@
+<div class="intro">
+
+    <div class="layer">
+    </div>
+
+    <h4 class="hero-txt">
+        Hi My Name Is
+        <br>
+        <span class="name">JOE HEWITT</span>
+        <br>
+        Designer
+        <br>
+        Developer
+        <br>
+        International Man of Mystery
+    </h4>
+</div>
+
+<div class="content">
+    <div class="navigation" scroll-position fix-position="portfolio.fixPosition" ng-class="{fixed: portfolio.fixPosition}">
+
+        <ul class="button-container display-horizontal">
+            <li class="button" ng-click="portfolio.jump('about')"><a>ABOUT</a></li>
+            <li class="button" ng-click="portfolio.jump('process')"><a>PROCESS</a></li>
+            <li class="button" ng-click="portfolio.jump('work')"><a>WORK</a></li>
+            <li class="button" ng-click="portfolio.jump('contact')"><a>CONTACT</a></li>
+        </ul>
+
+    </div>
+    <div id="about" class="about-section section">
+
+        <h3 class="header">ABOUT</h3>
+        <p>
+            I’ve had a love of creation and exploration from a young age and spent my college years studying
+            game design, development and user experience. On graduating I swore an ancient and terrible oath to
+            fight confusing and frustrating design where ever it may lurk.
+            <br>
+            <br>
+            I’m passionate about games that help us explore who we are; and the power of design to foster
+            empathy, build new tools and create a sense of wonder.
+            <br>
+            <br>
+            In my work I build user experiences from early concept to launch and beyond. I research user needs,
+            create UI concepts and design user flows to create things that don’t fight the people using them
+            <br>
+            <br>
+        </p>
+    </div>
+    <div id="process" class="process-section section">
+        <h3 class="header">PROCESS</h3>
+
+        <div class="display-horizontal">
+            <ul id="process-buttons" class="button-container display-vertical">
+                <li class="process-button" ng-click="portfolio.setProcessStep(1)">
+                    <img src="src/profile/images/full-button-1.png" ng-if="portfolio.processStep == 1">
+                    <img src="src/profile/images/button-1.png" ng-if="portfolio.processStep != 1">
+                </li>
+                <li class="process-button" ng-click="portfolio.setProcessStep(2)">
+                    <img src="src/profile/images/full-button-2.png" ng-if="portfolio.processStep == 2">
+                    <img src="src/profile/images/button-2.png" ng-if="portfolio.processStep != 2">
+                </li>
+                <li class="process-button" ng-click="portfolio.setProcessStep(3)">
+                    <img src="src/profile/images/full-button-3.png" ng-if="portfolio.processStep == 3">
+                    <img src="src/profile/images/button-3.png" ng-if="portfolio.processStep != 3">
+                </li>
+                <li class="process-button" ng-click="portfolio.setProcessStep(4)">
+                    <img src="src/profile/images/full-button-4.png" ng-if="portfolio.processStep == 4">
+                    <img src="src/profile/images/button-4.png" ng-if="portfolio.processStep != 4">
+                </li>
+                <li class="process-button" ng-click="portfolio.setProcessStep(5)">
+                    <img src="src/profile/images/full-button-5.png" ng-if="portfolio.processStep == 5">
+                    <img src="src/profile/images/button-5.png" ng-if="portfolio.processStep != 5">
+                </li>
+            </ul>
+
+            <div id="process-text" class="display-vertical">
+                <h3 id="process-header" class="subheader">{{portfolio.processText[portfolio.processStep-1].head}}</h3>
+                <p>
+                    {{portfolio.processText[portfolio.processStep-1].body}}
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="work" class="work-section section">
+        <h3 class="header">WORK</h3>
+
+        <div ng-repeat="job in portfolio.jobs" class="display-horizontal">
+            <div class="display-vertical job-text">
+                <h4 class="subheader work-header">{{job.title}}</h4>
+                <p class="work-type"><span>Platform: </span> {{job.platform}}</p>
+                <p class="work-type"><span>My Role: </span> {{job.role}}</p>
+                <p class="work-txt">{{job.description}}</p>
+            </div>
+
+            <image-gallery class="gallery" ng-if="job.id+1 != 1" gallery-id="job.id">
+
+            </image-gallery>
+
+
+        </div>
+    </div>
+    <div id="contact" class="contact section">
+        <h3 class="header">CONTACT ME</h3>
+        <div class="display-horizontal" id="email-contact">
+            <img src="src/profile/images/android-mail-36-purple.png">
+            <p>jahewitt314@gmail.com</p>
+        </div>
+        <div class="display-horizontal" id="linkdin-contact">
+            <img src="src/profile/images/social-linkedin.png">
+            <p>
+                <a href="https://www.linkedin.com/in/josephhewitt419">My LinkedIn</a>
+            </p>
+        </div>
+    </div>
+</div>

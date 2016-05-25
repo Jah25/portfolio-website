@@ -1,0 +1,10 @@
+ language: node_js
+ node_js:
+   - "1.8"
+
+ before_install:
+  - export DISPLAY=:99.1
+  - sh -e /etc/init.d/xvfb start
+  - npm install -g grunt@1.3.x testacular@1.4.x
+
+ script: "grunt"

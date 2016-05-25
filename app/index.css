@@ -1,0 +1,161 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: "Roboto", Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    line-height: 20pt;
+}
+
+.subheader{
+    font-family:"Contrail One",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #212121;
+}
+.header{
+    font-family: "Contrail One",sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #6821EC;
+}
+.hero-txt{
+    font-family: "Contrail One",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    position: relative;
+    margin: auto;
+}
+.name{
+    font-size: 48px;
+    font-weight: 400;
+}
+.intro{
+    display: flex;
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    min-height: 384px;
+
+    background: url("src/profile/images/Armillary_Sphere3.jpg");
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.layer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background-color: rgba(104, 33, 236, 0.75);
+}
+.navigation{
+    position: relative;
+    min-height: 64px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0 0 0 0.25);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0 0 0 0.25);
+    box-shadow: 0px 1px 1px 0px #3F3F3F;
+    z-index: 100;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.button-container{
+    list-style: none;
+    margin: auto;
+}
+.button{
+    height: 64px;
+    width: 192px;
+    background-color: #ffffff;
+    /*border: none;*/
+    display: flex;
+    font-size: 14px;
+    color: #6821EC;
+}
+.button:hover{
+    background-color: #6821EC;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button a{
+    margin: auto;
+}
+.job-text{
+    width: 50%;
+}
+.section{
+    width: 60%;
+    margin: auto;
+}
+.display-horizontal{
+    display: flex;
+    flex-direction: row;
+}
+.display-vertical{
+    display: flex;
+    flex-direction: column;
+}
+.process-button{
+    margin-bottom: 24px;
+}
+.gallery{
+    margin: auto;
+    padding: 64px 0px 0px 24px;
+}
+.work-type{
+    margin: 0;
+}
+.work-type span{
+    font-weight: bold;
+}
+.work-header{
+    margin: 64px 0px 32px 0px;
+    text-transform: uppercase;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+#process-buttons{
+    margin: 0;
+}
+#process-text{
+    margin-left: 64px;
+}
+#process-header{
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+#email-contact img{
+    margin: auto 16px auto 8px;
+    height: 24px;
+    width: 24px;
+}
+#linkdin-contact img{
+    margin: auto 16px auto 8px;
+    height: 24px;
+    width: 24px;
+}
+#email-contact p{
+    margin: 8px 0px 8px 0px;
+}
+#linkdin-contact p{
+    margin: 8px 0px 8px 0px;
+}

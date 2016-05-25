@@ -1,0 +1,20 @@
+[
+  {"title":"Hagtap",
+    "id":"0",
+    "platform":"Android, iOS",
+    "role":"User Research, UX Designer",
+    "description":"Hagtap is a nightlife application that helps people find bars, clubs and lounges in their area as well as the events those venues host. My responsibilities included conducting User Research for the project as well as wireframing early iterations of the application."
+  },
+  {"title":"Fete",
+    "id":"1",
+    "platform":"Web",
+    "role":"UX Design, UI Design",
+    "description":"Fete is a party planning service created to help compare multiple venue spaces at once and make reservations. I was responsible for the entire UX process including user research, wireframing and UI design. My chief challenges in this project were making sure the site was more convenient then submitting individual request to a variety of venues"
+  },
+  {"title":"Wayscape",
+    "id":"2",
+    "platform":"Web",
+    "role":"UX Design",
+    "description":"Wayscape is a transmedia storytelling project that focuses on using Tabletop Roleplaying games and online storytelling communities to build an ever-changing interactive world. I was brought on board to streamline the design and make it more accessible. My work included conducting user research, developing wireframes and generating low fidelity mocks."
+  }
+]
